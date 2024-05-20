@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+           *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins'sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+                width: 100%;
+                height: 100vh;
+                background: #f2e9ff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .img-box{
+                width: 100px;
+                height: 500px;
+              
+                border-radius: 50px;
+                background:url(p3.jpg);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                transition: width 0.5s;
+                grid-gap: none;
+
+            }
+            .img-box:nth-child(2){
+                background: url(p1.jpg);
+                background-size: cover;
+                background-position: center;  
+
+            }
+            .img-box:nth-child(3){
+                background: url(p2.jpg);
+                background-size: cover;
+                background-position: center;  
+
+            }
+            .img-box:nth-child(4){
+                background: url(b7.jpg);
+                background-size: cover;
+                background-position: center;  
+
+            }
+            .img-box h3{
+                color: red;
+                position: absolute;
+                bottom: 80px;
+                left: 30px;
+                opacity: 0; 
+                transition: bottom 0.5s, opacity0.5s;
+
+            }
+            .img-box:hover{
+                width: 350px;
+                cursor: pointer;
+            }
+            .img-box:hover h3{
+                opacity: 1;
+                bottom: 75px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="img-box"><h3>IMAGE1</h3></div>
+            <div class="img-box"><h3>IMAGE2</h3></div>
+            <div class="img-box"><h3>IMAGE3</h3></div>
+            <div class="img-box"><h3>IMAGE4</h3></div>
+    </div>
+</body>
+</html>
